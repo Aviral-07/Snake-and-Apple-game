@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeGame</title>
+    <style>
+        body
+        {
+            background-color: #05831a;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+        #game-board
+        {
+            position: fixed;
+            display: grid;
+            grid-template-rows: repeat(21,1fr);
+            grid-template-columns: repeat(21,1fr);
+            background-color: rgb(152, 144, 144);
+            margin-left: 50vmin;
+            width: 100vmin;
+            height: 100vmin;
+            border: solid black;
+        }
+        .snake
+        {
+            background-color: rgb(85, 54, 207);
+            border-radius: 15%;
+        }
+        .snakeHead
+        {
+            background-color: rgb(58, 123, 160);
+            border-radius: 5%;
+        }
+        .food{
+            background-color: red;
+            border-radius: 50%;
+        }
+        #scorecard
+        {
+            position: fixed;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: larger;
+            color: white;
+            margin-left:3%;
+            margin-top: 2%;
+        }
+    </style>
+    <script src="game.js" defer type="module"></script>
+</head>
+<body>
+    <div id="game-board"></div>
+    <div id ="scorecard">SCORE: 0</div>
+</body>
+</html>
